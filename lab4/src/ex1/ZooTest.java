@@ -1,3 +1,5 @@
+package ex1;
+
 import ex1.*;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -5,8 +7,14 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+/**
+ * The type Zoo test.
+ */
 public class ZooTest {
 
+    /**
+     * Test raport hrana per luna.
+     */
     @Test
     public void testRaportHranaPerLuna() {
         Zoo gradinaZoologica = new Zoo("Gradina Zoologica Test");
@@ -31,6 +39,9 @@ public class ZooTest {
         assertEquals(3L, gradinaZoologica.raportHranaPerLuna().get("Elefant").longValue());
     }
 
+    /**
+     * Test animale de tip.
+     */
     @Test
     public void testAnimaleDeTip() {
         Zoo gradinaZoologica = new Zoo("Gradina Zoologica Test");
